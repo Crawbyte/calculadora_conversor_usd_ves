@@ -1,4 +1,4 @@
-encabezado = """Conversor de USD a VES
+ encabezado = """Conversor de USD a VES
  
 Si quieres calcular USD a VES, elige 1
 Si quieres calcular VES a USD, elige 2
@@ -76,17 +76,30 @@ def usd_ves(monto_usd, tasa):
         print('Opción incorrecta')
  
 if moneda == 2:
-  monto_ves = float(input("Agregue el monto en Bs.S: "))
+  monto_ves = float(input('Agregue el monto en Bs.S: '))
   print("""
   """)
-  print("""Tasa promedio del Dólar Paralelo: $""" + str(round(monto_ves / valor_pl, 2)) + " USD")
-  print("Tasa del Banco Central de Venezuela: $" + str(round(monto_ves / valor_bcv, 2)) + " USD")
-  print("Tasa de Zelle: $" + str(round(monto_ves / valor_z, 2)) + " USD")
-  print("Tasa de Banesco Panamá: $" + str(round(monto_ves / valor_bp, 2)) + " USD")
-  print("Tasa de Paypal: $" + str(round(monto_ves / valor_pl, 2)) + " USD")
-  print("Tasa de Uphold: $" + str(round(monto_ves / valor_uh, 2)) + " USD")
-  print("Tasa de Skrill: $" + str(round(monto_ves / valor_sk, 2)) + " USD")
-  print("Tasa de Amazon Gift Card: $" + str(round(monto_ves / valor_agc, 2)) + " USD")
-  print("Tasa de XPAY: $" + str(round(monto_ves / valor_xp, 2)) + " USD")
+  print('Tasa promedio del Dólar Paralelo: $' + str(round(monto_ves / valor_pl, 2)) + ' USD')
+  print('Tasa del Banco Central de Venezuela: $' + str(round(monto_ves / valor_bcv, 2)) + ' USD')
+  print('Tasa de Zelle: $' + str(round(monto_ves / valor_z, 2)) + ' USD')
+  print('Tasa de Banesco Panamá: $' + str(round(monto_ves / valor_bp, 2)) + ' USD')
+  print('Tasa de Paypal: $' + str(round(monto_ves / valor_pl, 2)) + ' USD')
+  print('Tasa de Uphold: $' + str(round(monto_ves / valor_uh, 2)) + ' USD')
+  print('Tasa de Skrill: $' + str(round(monto_ves / valor_sk, 2)) + ' USD')
+  print('Tasa de Amazon Gift Card: $' + str(round(monto_ves / valor_agc, 2)) + ' USD')
+  print('Tasa de XPAY: $' + str(round(monto_ves / valor_xp, 2)) + ' USD')
 else:
-  print("Opción incorrecta")
+  print('Opción incorrecta')
+
+########
+def converter(currency_rate, currency_value):
+    currency_in = input('¿Cuántos ' + currency_rate + currency_in + ' tienes?')
+    currency_in = float(currency_in)
+    currency_out = valor_currency_in / valor_currency_out
+    currency_out = round(currency_out, 2)
+    currency_out = str(currency_out)
+    print('Tienes ' + currency_symbol + currency_out + currency_rate)
+
+
+if __name__ == '__main__':
+    converter()
