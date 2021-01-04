@@ -1,4 +1,4 @@
- encabezado = """Conversor de USD a VES
+  encabezado = """Conversor de USD a VES
  
 Si quieres calcular USD a VES, elige 1
 Si quieres calcular VES a USD, elige 2
@@ -100,6 +100,15 @@ def converter(currency_rate, currency_value):
     currency_out = str(currency_out)
     print('Tienes ' + currency_symbol + currency_out + currency_rate)
 
+def currency_rate():
+	dolares == 'USD $ '
+	bolivares == 'VES Bs'
+
+def currency_value():
+	pass
+
+def method_value():
+	pass
 
 if __name__ == '__main__':
     converter()
